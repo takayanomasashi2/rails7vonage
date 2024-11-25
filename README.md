@@ -1,4 +1,4 @@
-# RubyKaigi 2024 Vonage Video API Demo
+# Vonage Video API Demo
 
 This is a demo application built in Ruby using [Ruby on Rails](https://rubyonrails.org/) and the [Vonage Rails Initializer](https://github.com/Vonage/vonage-rails), which uses the [Vonage Ruby SDK](https://github.com/Vonage/vonage-ruby-sdk)
 
