@@ -1,0 +1,15 @@
+<div data-controller="dialog" data-action="click->dialog#backdropClose">
+  <dialog data-dialog-target="dialog">
+    <%= form_with url: invite_video_call_path(@video_call) do |form| %>
+      <%= form.label :participant_name, "Name/名前" %>
+      <%= form.text_field :participant_name %>
+      <%= form.label :participant_phone_number, "Phone Number/電話番号" %>
+      <%= form.text_field :participant_phone_number, placeholder: '818012345678' %>
+      <%= form.submit 'Send Invite/招待状を送信する' %>
+    <% end %>
+
+    <button type="button" data-action="dialog#close" autofocus>Close/近い</button>
+  </dialog>
+
+  <button type="button" data-action="dialog#open">Invite Participant/参加者を招待する</button>
+</div>
